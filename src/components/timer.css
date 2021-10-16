@@ -1,0 +1,22 @@
+
+
+  **********************************
+
+  .Timers {
+    width: 180px;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  #display {
+    margin-bottom: 400px;
+    /*added*/
+    margin-left: 1200px;
+  }
+  #display span {
+    font-size: 36px;
+  }
+  h2 {
+    margin-right: -35px;
+    text-align: right;
+  }
