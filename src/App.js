@@ -144,12 +144,12 @@ const move = () => {
         />
         </div>
         <div style={{flex:1, marginTop: "30vh", marginRight: "10rem"}}>
-          <h2 style={{color: "white"}}>Helmet Detector AI</h2>
+          <h2 style={{color: "white"}}>Prueba de Amor Verdadero</h2>
         <div className="w3-light-grey" style={{margin: "0 3rem 0 3rem"}}>
           <div id="myBar" className="w3-container w3-green" style={{width: '0%'}}>0%</div>
         </div>
         <br />
-        <button className="w3-button w3-green" onClick={move}>Scan Now</button>
+        <button className="w3-button w3-green" onClick={move}>Escanear Ahora</button>
         <br /><br />
         <div id="cl" className="circle-loader" style={{visibility: "hidden"}}>
         <div className="checkmark draw"></div>
