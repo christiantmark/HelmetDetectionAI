@@ -29,6 +29,7 @@ const move = () => {
   if (count > 0) {
     $('.circle-loader').toggleClass('load-complete');
     $('.checkmark').toggle();
+    document.getElementById("text").innerHTML = "";
   }
   document.getElementById("cl").style.visibility = "visible";
   var elem = document.getElementById("myBar");  
@@ -43,6 +44,15 @@ const move = () => {
       $('.checkmark').toggle();
       is_moving = false;
       count++;
+      let text = "";
+      let per = Math.random();
+      if (per > 0.5) {
+        text = "Sí compatible: " + Math.round(per*100) + "%";
+      }
+      else {
+        text = "No compatible: " + Math.round(per*100) + "%";
+      }
+      document.getElementById("text").innerHTML = text;
     } else {
       width++; 
       elem.style.width = width + '%'; 
@@ -143,7 +153,7 @@ const move = () => {
           }}
         />
         </div>
-        <div style={{flex:1, marginTop: "30vh", marginRight: "10rem"}}>
+        <div style={{flex:1, marginTop: "30vh", marginRight: "-3rem"}}>
           <h2 style={{color: "white"}}>Prueba de Amor Verdadero</h2>
         <div className="w3-light-grey" style={{margin: "0 3rem 0 3rem"}}>
           <div id="myBar" className="w3-container w3-green" style={{width: '0%'}}>0%</div>
@@ -154,6 +164,7 @@ const move = () => {
         <div id="cl" className="circle-loader" style={{visibility: "hidden"}}>
         <div className="checkmark draw"></div>
         </div>
+        <div id="text" style={{color: "white", fontSize: "2rem"}}></div>
       </div>
       </div>
     </div>
